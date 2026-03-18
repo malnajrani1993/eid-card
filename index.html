@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تهنئة العيد</title>
+
+<style>
+body {
+  text-align: center;
+  font-family: Arial;
+  background: #0b1e3a;
+  color: white;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+img {
+  width: 900px;
+  max-width: 95%;
+}
+
+.name {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+</style>
+</head>
+
+<body>
+
+<h2>🎉 اكتب اسمك 🎉</h2>
+
+<input type="text" id="inputName" placeholder="اسمك هنا">
+<button onclick="generate()">عرض</button>
+
+<br><br>
+
+<div class="container">
+  <img src="eid.png">
+  <div class="name" id="name"></div>
+</div>
+
+<script>
+function generate() {
+  var name = document.getElementById("inputName").value;
+  document.getElementById("name").innerText = name;
+}
+</script>
+
+</body>
+</html>
